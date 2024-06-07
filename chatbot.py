@@ -46,7 +46,7 @@ class SimpleChatBot:
     def find_best_answer(self, input_sentence):
         distances = [calc_distance(input_sentence, q) for q in self.questions]  # 각 질문의 레벤슈타인 거리를 계산
         best_match_index = distances.index(min(distances))      # 레벤슈타인 거리가 가장 짧은 값의 인덱스를 반환
-        return self.answers[best_match_index]
+        return self.answers[best_match_index]             # 인덱스로 답변 채택
     
 
 # CSV 파일 경로를 지정하세요.
