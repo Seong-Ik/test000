@@ -1,6 +1,4 @@
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 
 # 레벤슈타인 거리 구하기
 def calc_distance(a, b):
